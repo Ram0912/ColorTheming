@@ -83,3 +83,23 @@ $("#hidespan").click(function() {
 $(".closebtn").click(function() {
 	$("#hidespan").show();
 });
+
+function showSelectOpt1() {
+	   document.getElementById('selectOption1').style.display = "block";
+	}
+function showSelectOpt2() {
+	   document.getElementById('selectOption2').style.display = "block";
+	}
+function showSelectOpt3() {
+	   document.getElementById('selectOption3').style.display = "block";
+	}
+
+$('.palette_li').each(
+		function() {
+			$(this).html(
+					'<input type="text" style="background: #'
+							+ $(this).attr('swatch') + ';" />');
+		});
+$('#pages').click(function() {
+	$('#register').css({"color": "red"});
+});

@@ -27,7 +27,21 @@
 			<li class="palette_li" swatch="95BCFF"></li>
 			<li class="palette_li" swatch="252F40"></li>
 			<li class="palette_li" swatch="86A9E5"></li>
-			<a href="#" id="blue"><span>Studie Eins Zwei Drei </span></a>
+			<a href="#" onclick="showSelectOpt1()" id="blue"><span>Studie Eins Zwei Drei </span></a>
+				<form>		
+		  <div class="form-group" id="selectOption1" style="display:none">
+      <label for="sel1">Select list (select one):</label>
+      <select class="form-control" id="sel1" >
+        <option value="navbar">Navigation Bar</option>
+        <option value="headertxt">Header Text</option>
+        <option value="bgcolor">Background</option>
+        <option value="footer">Footer</option>
+        <option value="footercolor">Footer Text</option>
+        <option value="carouseltxt">Carousel Text</option>
+        <option value="hovertxt">Hover Text</option>
+      </select>
+    </div>
+  </form>
 		</ul>
 		<ul class="palette_ul">
 			<li class="palette_li" swatch="009688"></li>
@@ -35,15 +49,44 @@
 			<li class="palette_li" swatch="F7BD80"></li>
 			<li class="palette_li" swatch="ED767A"></li>
 			<li class="palette_li" swatch="B54A71"></li>
-			<a href="#" id="black"><span>Mosne</span></a>
+			<a href="#" id="black" onclick="showSelectOpt2()"><span>Mosne</span></a>
+			<form>		
+		  <div class="form-group" id="selectOption2" style="display:none">
+      <label for="sel1">Select list (select one):</label>
+      <select class="form-control" id="sel1" >
+        <option value="navbar">Navigation Bar</option>
+        <option value="headertxt">Header Text</option>
+        <option value="bgcolor">Background</option>
+        <option value="footer">Footer</option>
+        <option value="footercolor">Footer Text</option>
+        <option value="carouseltxt">Carousel Text</option>
+        <option value="hovertxt">Hover Text</option>
+      </select>
+    </div>
+  </form>
 		</ul>
+
 		<ul class="palette_ul">
 			<li class="palette_li" swatch="16C4C7"></li>
 			<li class="palette_li" swatch="9ADBD9"></li>
 			<li class="palette_li" swatch="B5CEB9"></li>
 			<li class="palette_li" swatch="E0E9D0"></li>
 			<li class="palette_li" swatch="D641C7"></li>
-			<a href="#" id="yellow"><span>Prophets </span></a>
+			<a href="#" id="yellow" onclick="showSelectOpt3()"><span>Prophets </span></a>
+				<form>		
+		  <div class="form-group" id="selectOption3" style="display:none">
+      <label for="sel1">Select list (select one):</label>
+      <select class="form-control" id="sel1" >
+        <option value="navbar">Navigation Bar</option>
+        <option value="headertxt">Header Text</option>
+        <option value="bgcolor">Background</option>
+        <option value="footer">Footer</option>
+        <option value="footercolor">Footer Text</option>
+        <option value="carouseltxt">Carousel Text</option>
+        <option value="hovertxt">Hover Text</option>
+      </select>
+    </div>
+  </form>
 		</ul>
 		<ul class="palette_ul">
 			<li class="palette_li" swatch="F2F4F5"></li>
@@ -63,7 +106,7 @@
 		</ul>
 	</div>
 	<div id="main">
-		<div class="navbar navbar-inverse ">
+		<div class="navbar navbar-inverse " id="navbar-inverse" >
 			<div class="container">
 				<button class="navbar-toggle"
 					data-target=".navbar-responsive-collapse" data-toggle="collapse"
@@ -81,10 +124,10 @@
 							<ul class="dropdown-menu">
 								<li><a href="#">Page 3</a></li>
 							</ul></li>
-						<li><a href="#">Pages</a></li>
+						<li><a href="#" id="pages">Pages</a></li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="register"><span
+						<li><a href="register" id="register"><span
 								class="glyphicon glyphicon-user"></span> Sign Up</a></li>
 						<li><a href="login"><span
 								class="glyphicon glyphicon-log-in"></span> Login</a></li>

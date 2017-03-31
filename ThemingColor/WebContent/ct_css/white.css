@@ -1,0 +1,55 @@
+@import
+	url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css)
+	;
+
+body {
+	background-image:
+		url(http://www.publicdomainpictures.net/pictures/130000/velka/brown-wooden-background-1442944775soP.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.navbar-inverse {
+	background-color: #3D342B;
+}
+/* Carousel Styles */
+.carousel-indicators .active {
+	background-color: #33374D;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+}
+/* Carousel Header Styles */
+.header-text {
+	color: #F2F2F2;
+}
+
+.header-text h2 span {
+	background-color: none;
+	font-color: #33374D;
+}
+
+.header-text h3 span {
+	background-color: none;
+	font-color: #33374D;
+}
+
+.btn-theme {
+	color: #33374D;
+	background-color: transparent;
+	border: 2px solid #33374D;
+	margin-right: 15px;
+}
+
+.btn-theme:hover {
+	color: #33374D;
+	background-color: #33374D;
+	border-color: #33374D;
+}
+/* Footer styles
+-------------------------------------------------- */
+footer {
+	background-color: #419A13;
+}

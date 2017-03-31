@@ -1,0 +1,55 @@
+@import
+	url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css)
+	;
+
+body {
+	background-image:
+		url(https://thumbs.dreamstime.com/t/abstract-background-made-stones-large-variety-rough-featuring-many-shades-bluish-color-41772958.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.navbar-inverse {
+	background-color: #252F40;
+}
+/* Carousel Styles */
+.carousel-indicators .active {
+	background-color: #33374D;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+}
+/* Carousel Header Styles */
+.header-text {
+	color: #95BCFF;
+}
+
+.header-text h2 span {
+	background-color: none;
+	font-color: #33374D;
+}
+
+.header-text h3 span {
+	background-color: none;
+	font-color: #33374D;
+}
+
+.btn-theme {
+	color: #33374D;
+	background-color: transparent;
+	border: 2px solid #33374D;
+	margin-right: 15px;
+}
+
+.btn-theme:hover {
+	color: #33374D;
+	background-color: #33374D;
+	border-color: #33374D;
+}
+/* Footer styles
+-------------------------------------------------- */
+footer {
+	background-color: #95BCFF;
+}

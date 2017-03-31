@@ -1,0 +1,55 @@
+@import
+	url(http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css)
+	;
+
+body {
+	background-image:
+		url(https://www.colourbox.com/preview/10073277-pale-sky-blue-background-with-soft-pastel-vintage-background-grunge-texture-and-light-solid-design-white-background-cool-plain-wall-or-paper-old-blue-painted-canvas-for-scrapbook-parchment-label.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.navbar-inverse {
+	background-color: #203340;
+}
+/* Carousel Styles */
+.carousel-indicators .active {
+	background-color: #33374D;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+}
+/* Carousel Header Styles */
+.header-text {
+	color: #F2F2F2;
+}
+
+.header-text h2 span {
+	background-color: none;
+	font-color: #33374D;
+}
+
+.header-text h3 span {
+	background-color: none;
+	font-color: #33374D;
+}
+
+.btn-theme {
+	color: #33374D;
+	background-color: transparent;
+	border: 2px solid #33374D;
+	margin-right: 15px;
+}
+
+.btn-theme:hover {
+	color: #33374D;
+	background-color: #33374D;
+	border-color: #33374D;
+}
+/* Footer styles
+-------------------------------------------------- */
+footer {
+	background-color: #40505B;
+}

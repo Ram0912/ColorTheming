@@ -3,9 +3,7 @@
 	;
 
 body {
-	background-image:
-		url(https://thumbs.dreamstime.com/t/abstract-background-made-stones-large-variety-rough-featuring-many-shades-bluish-color-41772958.jpg);
-	background-repeat: no-repeat;
+	background-color:#4A5E7F;
 	background-attachment: fixed;
 	background-size: 100% 100%;
 }

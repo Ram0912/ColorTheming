@@ -17,32 +17,34 @@
 <link href="ct_css/sample.css" rel="stylesheet" />
 <link id="stylechange" rel="stylesheet" href="">
 </head>
-<body>
+<body id="bgcolor" style="background-color:">
 	<div id="mySidenav" class="sidenav">
 		<h3>Color Theme</h3>
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 		<ul class="palette_ul">
+					<form>
+				<div class="form-group" id="selectOption1" style="display: none">
+					 <select class="form-control" id="sel1">
+						<option value="navbar">Navigation Bar</option>
+						<option value="headertxt">Header Text</option>
+						<option value="bgcolor">Background</option>
+						<option value="footer">Footer</option>
+						<option value="footercolor">Footer Text</option>
+						<option value="carouseltxt">Carousel Text</option>
+						<option value="hovertxt">Hover Text</option>
+					</select>
+				</div>
+			</form>
 			<li class="palette_li" swatch="708DBF"></li>
 			<li class="palette_li" swatch="4A5E7F"></li>
 			<li class="palette_li" swatch="95BCFF"></li>
 			<li class="palette_li" swatch="252F40"></li>
 			<li class="palette_li" swatch="86A9E5"></li>
-			<a href="#" onclick="showSelectOpt1()" id="blue"><span>Studie Eins Zwei Drei </span></a>
-				<form>		
-		  <div class="form-group" id="selectOption1" style="display:none">
-      <label for="sel1">Select list (select one):</label>
-      <select class="form-control" id="sel1" >
-        <option value="navbar">Navigation Bar</option>
-        <option value="headertxt">Header Text</option>
-        <option value="bgcolor">Background</option>
-        <option value="footer">Footer</option>
-        <option value="footercolor">Footer Text</option>
-        <option value="carouseltxt">Carousel Text</option>
-        <option value="hovertxt">Hover Text</option>
-      </select>
-    </div>
-  </form>
+			<a href="#" onclick="showSelectOpt1()" id="blue"><span>Studie
+					Eins Zwei Drei </span></a>
+
 		</ul>
+
 		<ul class="palette_ul">
 			<li class="palette_li" swatch="009688"></li>
 			<li class="palette_li" swatch="E3D9BB"></li>
@@ -50,43 +52,15 @@
 			<li class="palette_li" swatch="ED767A"></li>
 			<li class="palette_li" swatch="B54A71"></li>
 			<a href="#" id="black" onclick="showSelectOpt2()"><span>Mosne</span></a>
-			<form>		
-		  <div class="form-group" id="selectOption2" style="display:none">
-      <label for="sel1">Select list (select one):</label>
-      <select class="form-control" id="sel1" >
-        <option value="navbar">Navigation Bar</option>
-        <option value="headertxt">Header Text</option>
-        <option value="bgcolor">Background</option>
-        <option value="footer">Footer</option>
-        <option value="footercolor">Footer Text</option>
-        <option value="carouseltxt">Carousel Text</option>
-        <option value="hovertxt">Hover Text</option>
-      </select>
-    </div>
-  </form>
 		</ul>
-
 		<ul class="palette_ul">
 			<li class="palette_li" swatch="16C4C7"></li>
 			<li class="palette_li" swatch="9ADBD9"></li>
 			<li class="palette_li" swatch="B5CEB9"></li>
 			<li class="palette_li" swatch="E0E9D0"></li>
 			<li class="palette_li" swatch="D641C7"></li>
-			<a href="#" id="yellow" onclick="showSelectOpt3()"><span>Prophets </span></a>
-				<form>		
-		  <div class="form-group" id="selectOption3" style="display:none">
-      <label for="sel1">Select list (select one):</label>
-      <select class="form-control" id="sel1" >
-        <option value="navbar">Navigation Bar</option>
-        <option value="headertxt">Header Text</option>
-        <option value="bgcolor">Background</option>
-        <option value="footer">Footer</option>
-        <option value="footercolor">Footer Text</option>
-        <option value="carouseltxt">Carousel Text</option>
-        <option value="hovertxt">Hover Text</option>
-      </select>
-    </div>
-  </form>
+			<a href="#" id="yellow" onclick="showSelectOpt3()"><span>Prophets
+			</span></a>
 		</ul>
 		<ul class="palette_ul">
 			<li class="palette_li" swatch="F2F4F5"></li>
@@ -106,7 +80,7 @@
 		</ul>
 	</div>
 	<div id="main">
-		<div class="navbar navbar-inverse " id="navbar-inverse" >
+		<div class="navbar navbar-inverse " id="navbar-inverse">
 			<div class="container">
 				<button class="navbar-toggle"
 					data-target=".navbar-responsive-collapse" data-toggle="collapse"
@@ -137,7 +111,7 @@
 		</div>
 		<br> <span id="hidespan" style="font-size: 30px; cursor: pointer"
 			onclick="openNav()">&#9776; Color Themes</span>
-
+		<!-- carousel -->
 		<div class="container">
 			<div class="row">
 				<!-- Carousel -->
@@ -157,7 +131,7 @@
 								src="http://cdn.pcwallart.com/images/assassins-creed-3-wallpaper-3.jpg"
 								alt="First slide">
 							<!-- Static Header -->
-							<div class="header-text hidden-xs">
+							<div class="header-text hidden-xs" id="headertxt">
 								<div class="col-md-12 text-center">
 									<h2>
 										<span>Welcome to <strong>ArtZon GameZ</strong></span>
@@ -222,13 +196,13 @@
 			</div>
 		</div>
 		<br>
-		<footer class="container-fluid text-center bg-lightgray">
+		<footer class="container-fluid text-center bg-lightgray" id="footer">
 		<div class="copyrights" style="margin-top: 25px;">
-			<p>
+			<p id="footertxt">
 				Mossy City © 2016, All Rights Reserved <br> <span>Web
 					Design By: Mike Clark</span>
 			</p>
-			<p>
+			<p id="hovertxt">
 				<a href="https://www.linkedin.com/in/michael-clark-webdeveloper"
 					target="_blank">Linkedin <i class="fa fa-linkedin-square"
 					aria-hidden="true"></i> 
